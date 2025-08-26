@@ -2,8 +2,8 @@
 
 This is a responsive weather forecast web application built with vanilla JavaScript, HTML, and CSS. It fetches weather data from Open-Meteo and allows users to search for locations or use their current geolocation to display a 5-day forecast.
 
+
 ## Features ✨
----
 
 - Current location weather 📍: Uses browser geolocation API to fetch weather for your location.
 - Search for locations 🔍: Input a city name to get weather data.
@@ -13,8 +13,8 @@ This is a responsive weather forecast web application built with vanilla JavaScr
 - Loader & error handling ⏳❌: Shows loader while fetching data and handles errors gracefully.
 - Responsive design 📱💻: Breakpoints for various screen sizes.
 
-## Usage 🖱️
 
+## Usage 🖱️
 
 - Use the search input to find weather for any city.
 - Click the GPS button to fetch your current location's weather.
@@ -22,8 +22,8 @@ This is a responsive weather forecast web application built with vanilla JavaScr
 - Toggle dark mode with the moon button 🌙.
 - Reset the forecast container with the reset button ✖.
 
+
 ## Technologies used 💻
----
 
 - Vanilla JavaScript (ES6+)
 - HTML5
@@ -32,8 +32,8 @@ This is a responsive weather forecast web application built with vanilla JavaScr
 - BigDataCloud API 🗺️
 - Geolocation API 📍
 
+
 ## JavaScript skills used 🛠️
----
 
 - DOM manipulation (querySelector, insertAdjacentHTML, classList, createElement)
 - Event handling (click, submit, DOMContentLoaded)
@@ -45,19 +45,19 @@ This is a responsive weather forecast web application built with vanilla JavaScr
 - String and date manipulation (formatting dates, times, and strings)
 - Modular code structure (low-level vs top-level functions)
 
+
 ## Code Structure 🏗️
----
 
 - Low-level functions 🔧: Handle UI updates, DOM manipulation, fetching data, error handling.
 - Top-level functions 🎛️: Coordinate workflow, orchestrate fetching, rendering, and clearing UI.
 
+
 ## License 📄
----
 
 This project is open source and available under the MIT License.
 
+
 ## Acknowledgements 🙏
----
 
 - Open-Meteo: https://open-meteo.com/ for weather data API
 - BigDataCloud: https://www.bigdatacloud.com/ for reverse geocoding API
