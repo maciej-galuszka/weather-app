@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rain or shine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons-wind.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Happy+Monkey&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="title">
+      <div class="title-box">
+        <h1>Rain or shine</h1>
+        <img class="logo" src="logo.png" alt="Rain or shine logo" />
+      </div>
+      <form class="search">
+        <input
+          type="text"
+          minlength="3"
+          required
+          placeholder="Enter location..."
+        />
+
+        <button class="btn-submit" type="submit" aria-label="Search"></button>
+        <button
+          type="button"
+          class="btn btn-controls btn-geolocation"
+          aria-label="Use my location"
+        >
+          <ion-icon class="icon" name="locate-outline"></ion-icon>
+        </button>
+        <button
+          type="button"
+          class="btn btn-controls btn-reset"
+          aria-label="Clear input"
+        >
+          <ion-icon class="icon" name="close"></ion-icon>
+        </button>
+        <button
+          class="btn btn-controls btn-darkmode"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <ion-icon class="icon" name="moon-outline"></ion-icon>
+        </button>
+      </form>
+    </header>
+    <main>
+      <div class="container">
+        <div class="forecast-box"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <span>
+          © 2025 Rain or shine | Developed by Maciej Gałuszka
+          <a
+            href="https://github.com/maciej-galuszka"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><ion-icon class="footer-logo" name="logo-github"></ion-icon
+          ></a>
+        </span>
+        <span><span class="bar"> | </span> Powered by Open-Meteo API</span>
+      </div>
+    </footer>
+  </body>
+</html>
