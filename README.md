@@ -14,7 +14,7 @@ This is a responsive weather forecast web application built with vanilla JavaScr
 - Responsive design 📱💻: Breakpoints for various screen sizes.
 
 ## Usage 🖱️
----
+
 
 - Use the search input to find weather for any city.
 - Click the GPS button to fetch your current location's weather.
@@ -51,7 +51,7 @@ This is a responsive weather forecast web application built with vanilla JavaScr
 - Low-level functions 🔧: Handle UI updates, DOM manipulation, fetching data, error handling.
 - Top-level functions 🎛️: Coordinate workflow, orchestrate fetching, rendering, and clearing UI.
 
-##License 📄
+## License 📄
 ---
 
 This project is open source and available under the MIT License.
