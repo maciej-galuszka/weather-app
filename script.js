@@ -131,54 +131,18 @@ const fetchJSON = async (url, timeout = 10000) => {
   }
 };
 
-// const getUserCoordinates = async () => {
-//   try {
-//     // getting user's coordinates from the navigator API
-//     const position = await new Promise((resolve, reject) => {
-//       navigator.geolocation.getCurrentPosition(resolve, reject);
-//     });
-//     return position.coords;
-//   } catch {
-//     throw new Error(
-//       "Could not get your location. Please enable geolocation in your browser."
-//     );
-//   }
-// };
-const getUserCoordinates = () => {
-  return new Promise((resolve, reject) => {
-    if (!navigator.geolocation) {
-      reject(new Error("Geolocation is not supported by your browser."));
-      return;
-    }
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        resolve(position.coords);
-      },
-      (err) => {
-        switch (err.code) {
-          case err.PERMISSION_DENIED:
-            reject(
-              new Error(
-                "Permission denied. Please enable location access in your browser."
-              )
-            );
-            break;
-          case err.POSITION_UNAVAILABLE:
-            reject(new Error("Location information is unavailable."));
-            break;
-          case err.TIMEOUT:
-            reject(new Error("Location request timed out."));
-            break;
-          default:
-            reject(
-              new Error("An unknown error occurred while fetching location.")
-            );
-        }
-      },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+const getUserCoordinates = async () => {
+  try {
+    // getting user's coordinates from the navigator API
+    const position = await new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(resolve, reject);
+    });
+    return position.coords;
+  } catch {
+    throw new Error(
+      "Could not get your location. Please enable geolocation in your browser."
     );
-  });
+  }
 };
 
 // function to get location data (city, country) based on given latitude, longitude
