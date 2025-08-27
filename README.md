@@ -59,7 +59,7 @@ This project is open source and available under the MIT License.
 
 ## Acknowledgements 🙏
 
-- Open-Meteo: https://open-meteo.com/ for weather data API
-- BigDataCloud: https://www.bigdatacloud.com/ for reverse geocoding API
+- Open-Meteo: https://open-meteo.com/
+- BigDataCloud: https://www.bigdatacloud.com/
 - Geocoding: https://geocode.maps.co
 - Weather Icons: https://www.flaticon.com/authors/iconixar
