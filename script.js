@@ -311,7 +311,7 @@ const getWeather = async function (lat, lng, location) {
       <p>
       <i class="icon-details wi wi-sunrise"></i
       ><span
-      >Sunset: ${data.daily.sunrise[ i
+      >Sunrise: ${data.daily.sunrise[ i
       ].slice(data.daily.sunrise[i].indexOf("T") + 1)}</span
       >
       </p>
