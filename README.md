@@ -63,3 +63,18 @@ This project is open source and available under the MIT License.
 - BigDataCloud: https://www.bigdatacloud.com/
 - Geocoding: https://geocode.maps.co
 - Weather Icons: https://www.flaticon.com/authors/iconixar
+
+
+## 📦 Getting Started
+
+To run the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/task-tracker.git
+2. Navigate to the project directory::
+   ```bash
+   cd task-tracker
+3. Open index.html in your browser.
+
+No build tools or dependencies required – it’s 100% client-side!
