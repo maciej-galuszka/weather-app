@@ -100,7 +100,6 @@ const verifyResponse = (res) => {
     switch (res.status) {
       case 404:
         throw new Error("We couldn’t find weather data for this location.");
-      case 500:
       case 503:
         throw new Error("Our weather service is temporarily unavailable.");
       case 401:
