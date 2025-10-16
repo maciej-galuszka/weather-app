@@ -102,7 +102,6 @@ const verifyResponse = (res) => {
         throw new Error("We couldn’t find weather data for this location.");
       case 503:
         throw new Error("Our weather service is temporarily unavailable.");
-      case 401:
       case 403:
         throw new Error("Access denied. Please contact support.");
       default:
